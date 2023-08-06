@@ -44,7 +44,7 @@ def clean_data(df):
     return df
 
 def save_data(df, database_filename):
-        """
+    """
     Here we save the cleaned data in the SQL database form.
     args:
         df: cleaned data
