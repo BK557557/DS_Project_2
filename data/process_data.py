@@ -34,22 +34,14 @@ def clean_data(df):
     categories.columns = category_colnames
     
     for column in categories:
-    	# set each value to be the last character of the string
         categories[column] = categories[column].apply(lambda x : x[-1])
-    	
-        #convert column from string to numeric
-    	categories[column] = categories[column].apply(lambda x : int(x))
-        
-        # converting number greater than 1 to 1
+        categories[column] = categories[column].apply(lambda x : int(x))
         categories[column] = categories[column].apply(lambda x: 1 if x > 1 else x)
         
     df.drop(columns = 'categories', inplace = True)
     df = pd.concat([df,categories],axis=1)
-    
-    # drop duplicates
     df.drop_duplicates(inplace = True)
     return df
-
 
 def save_data(df, database_filename):
         """
