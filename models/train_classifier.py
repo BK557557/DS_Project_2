@@ -62,13 +62,13 @@ def tokenize(text):
 
 
 def build_model():
-   """
-   This function build constructs an ML pipeline & 
-   splits your data into training and testing &
-   and fits the ML pipeline on the training data &
-   applies a Gridsearch CV
+    """
+    This function build constructs an ML pipeline & 
+    splits your data into training and testing &
+    and fits the ML pipeline on the training data &
+    applies a Gridsearch CV
    
-   """
+    """
     pipe = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
@@ -81,7 +81,7 @@ def build_model():
     
     param_grid = {
     'clf__n_estimators': [5]
-     }
+    }
 
     cv = GridSearchCV(pipe, param_grid = parameters)
     
