@@ -4,7 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
-        """
+    """
     This function loads the message and categories csv file.
     args:
         messages_filepath: it is the path to the messages.csv file
@@ -37,7 +37,7 @@ def clean_data(df):
     	# set each value to be the last character of the string
         categories[column] = categories[column].apply(lambda x : x[-1])
     	
-	# convert column from string to numeric
+        #convert column from string to numeric
     	categories[column] = categories[column].apply(lambda x : int(x))
         
         # converting number greater than 1 to 1
