@@ -52,7 +52,7 @@ def save_data(df, database_filename):
         database_filename: the place where the SQL database to be stored
     """
         
-    engine = create_engine('sqlite:///disaster_response_pipeline.db')
+    engine = create_engine('sqlite:///data/disaster_response_pipeline.db')
     df.to_sql('full_dataset_test_2', engine, index=False)  
 
 
