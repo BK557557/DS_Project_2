@@ -27,7 +27,7 @@ def tokenize(text):
 
 # load data
 engine = create_engine('sqlite:///../data/disaster_response_pipeline.db')
-df = pd.read_sql_table('full_dataset', engine)
+df = pd.read_sql_table('sql_dataset', engine)
 
 
 # load model

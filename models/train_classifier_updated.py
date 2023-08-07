@@ -35,7 +35,7 @@ def load_data(database_filepath):
     """
 
     engine = create_engine('sqlite:///' + database_filepath)
-    query = 'SELECT * FROM full_dataset'
+    query = 'SELECT * FROM sql_dataset'
     df = pd.read_sql(query, engine)
     rows_with_twos = df.isin([2]).any(axis=1)
     filtered_df = df[~rows_with_twos]
