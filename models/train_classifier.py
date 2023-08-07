@@ -32,16 +32,17 @@ def load_data(database_filepath):
         y: category names
         
     """
-    engine = create_engine('sqlite:///database_filepath')
+    engine = create_engine('sqlite:///' + database_filepath)
     query = 'SELECT * FROM full_dataset'
     df = pd.read_sql(query, engine)
     rows_with_twos = df.isin([2]).any(axis=1)
     filtered_df = df[~rows_with_twos]
-    
-    X = filtered_df['message']
-    y = filtered_df.drop(['id', 'message', 'original', 'genre'], axis = 1)
 
-    return X, y
+    X = filtered_df['message']
+    y = filtered_df.drop(['id', 'message', 'original', 'genre'], axis=1)
+    category_names = y.columns.tolist()  # Get the list of category names
+
+    return X, y, category_names
 
 
 def tokenize(text):
