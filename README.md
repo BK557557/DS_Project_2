@@ -41,6 +41,9 @@ Run the following command in the app's directory to run your web app -
 
 ![Screen Shot 2023-08-08 at 12 01 55 AM](https://github.com/BK557557/DS_Project_2/assets/141200544/0f5aafc6-55bf-4768-b20e-38b3f6b7db6e)
 
+![Screen Shot 2023-08-08 at 12 01 59 AM](https://github.com/BK557557/DS_Project_2/assets/141200544/4158a056-4254-4fb8-9716-61f893e73c8c)
+
+![Screen Shot 2023-08-08 at 12 20 12 AM](https://github.com/BK557557/DS_Project_2/assets/141200544/f59a5db7-0f2d-4f4c-98c1-152297446047)
 
 
 ## Licensing, Authors, Acknowledgements
