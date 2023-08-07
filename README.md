@@ -23,11 +23,4 @@ data: This folder contains sample messages and categories datasets in csv format
 
 app: cointains the run.py to iniate the web app.
 
-## Instructions:
-Run the following commands in the project's root directory to set up your database and model.
 
-To run ETL pipeline that cleans data and stores in database python data/**_process_data.py data/disaster_messages.csv data/disaster_categories.csv data/disaster_response_pipeline.db_**
-
-To run ML pipeline that trains classifier and saves python models/**_train_classifier_updated.py data/disaster_response_pipeline.db models/classifier.pkl_**
-
-Run the following command in the app's directory to run your web app. python run.py
