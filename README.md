@@ -29,7 +29,7 @@ Run the following commands in the project's root directory to set up your databa
 
 To run ETL pipeline that cleans data and stores in database - 
 
-```python data/process_data.py data/messages.csv data/categories.csv data/disaster_reponse_pipeline.db```
+```python data/process_data.py data/messages.csv data/categories.csv data/disaster_response_pipeline.db```
 
 To run ML pipeline that trains classifier and saves - 
 
